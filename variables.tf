@@ -11,8 +11,15 @@ us-west-1 ="ami-04b6c97b14c54de18"
   }
 }
 
+variable "instance_count"{
+  default=3
+}
 
+variable "instance_tags"{
+  type=list
+  default = ["Ser1","Ser2","Ser3"]
 
+}
 
 variable "vpc_cidr" {
   default = "10.20.0.0/16"
