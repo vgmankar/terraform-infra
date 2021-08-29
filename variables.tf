@@ -22,6 +22,9 @@ variable "subnet_cidr" {
   default = ["10.20.1.0/24", "10.20.2.0/24"]
 }
 
+variable "subnet_cidr_pvt" {
+  default = ["10.20.3.0/24", "10.20.4.0/24"]
+}
 
 
 variable "instance-type"{
